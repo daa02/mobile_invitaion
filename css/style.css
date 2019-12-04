@@ -113,7 +113,7 @@ body{
 }
 #calender img{
     height: auto;
-    width: 375px;
+    width: 100%;
     opacity: .9;
 }
 #calender>h2{

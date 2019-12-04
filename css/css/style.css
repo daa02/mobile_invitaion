@@ -1,0 +1,245 @@
+/* style.css */
+/* 
+    main-color
+    #d9ddde
+    #024787
+
+    #ccd0d1, #8b92a4, #606b71, #59656d
+*/
+/* 초기화 */
+*{margin: 0; padding: 0;}
+a{text-decoration: none;}
+li{list-style: none;display: inline-block;}
+address{font-style: normal;}
+body, html{height: 100%; width: 100%;}
+body{
+    font-family: 'Nanum Myeongjo', serif;
+    color: #59656d;
+    text-align: center;
+    font-size: 14px;
+}
+/* 헤더 */
+#main_header{
+    position: absolute;
+    /* background: #ccc; */
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+}
+#main_header>#main_text{
+    position: absolute;
+    top: 60px;
+    left: calc(50% - 102.5px);
+}
+#main_header>#main_text>h1{
+    font-size: 1.7em;
+    letter-spacing: 7px;
+}
+#main_header>#main_text>p{
+    letter-spacing: 1px;
+    margin-left: -3px;
+    padding-top: 15px;
+}
+
+#main_header>address{
+    position: absolute;
+    bottom: 57px;
+    left: calc(50% - 93.8px);
+    color: white;
+    line-height: 25px;
+}
+/* 메인비주얼 */
+#main_visual{
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    background-image: url('../images/main_visual.jpg');
+    background-size: cover;
+}
+/* 인삿말 */
+.box{
+    /* margin-top: 100px; */
+    left: calc(50% - 45px);
+    width: 90px;
+    height: 90px;
+    border-top: 1px solid #59656d;
+    border-bottom: 1px solid #59656d;
+    transform: rotate(45deg);
+    margin: 0 auto;
+}
+#invitation{
+    /* height: 100%; */
+    /* background: #ccc; */
+}
+#invitation>.box{
+    margin-top: 90px;
+}
+#invitation>h2{
+    /* padding: 110px 0; */
+    margin-top: -55px;
+    padding-bottom: 90px;
+}
+#invitation>p{
+    line-height: 40px;
+}
+#invitation>#call{
+    padding: 70px 0;
+}
+#invitation>#call>p{
+    line-height: 30px;
+}
+#invitation>#call img{
+    margin-left: 5px;
+    width: 23px;
+    padding: 3px;
+    position: absolute;
+}
+#invitation span{
+    font-size: 1.2em;
+    padding: 0 5px;
+}
+
+/* 캘린더 */
+#calender{
+    background: #d9ddde;
+    /* height: 100%; */
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+#calender>#main_photo{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+#calender img{
+    height: auto;
+    width: 375px;
+    opacity: .9;
+}
+#calender>h2{
+    padding: 50px 0;
+}
+#calender>table{
+    margin: 0 auto;
+    text-transform: lowercase;
+    padding-bottom: 40px;
+    margin-top: -10px;
+}
+#calender>table td{
+    padding: 8px;
+    font-weight: bold;
+}
+#calender span{
+    background: #024986;
+    border-radius: 50px;
+    padding: 6px;
+    color: white;
+}
+#calender>.info{
+    margin: 40px 0;
+    background:  #ccd0d1;
+    width: 70%;
+    margin: 0 auto;
+    padding: 16px 5px;
+    line-height: 20px;
+}
+
+/* 갤러리 */
+#gallery{
+    /* height: 100%; */
+    /* background: #ff0; */
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+#gallery>.box{
+    /* margin-top: 90px; */
+}
+#gallery>h2{
+    margin-top: -55px;
+    padding-bottom: 90px;
+}
+#gallery>#photo_list{
+    margin-left: calc(50% - 160px);
+    overflow: hidden;
+    width: 100%;
+}
+#gallery>#photo_list ul li{
+    float: left;
+    display: inline-block;
+    padding: 5px;
+    overflow: hidden;
+    width: 150px;
+    height: 120px;
+    position: relative;
+}
+#gallery img{
+    /* width: 150px; */
+    height: 120px;
+    width: auto;
+}
+#gallery>#photo_list li:nth-child(3){
+    clear: both;
+}
+#gallery span{
+    position: absolute;
+    left: 320px;
+}
+
+/* 오시는길 */
+#location{
+    padding-top: 90px;
+    /* background: #ff0; */
+}
+#location>h2{
+    margin-top: -55px;
+    padding-bottom: 100px;
+}
+#location>.location_ad{
+    line-height: 25px;
+}
+#map{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#map .map_info{
+    background: #dcdcdc;
+    color: #a1b3bb;
+    padding: 10px 0;
+    margin-top: -17px;
+    position: absolute;
+    width: 100%;
+}
+#traffics{
+    padding: 30px 0;
+}
+#traffics>.traffic{
+    padding: 15px;
+}
+#traffics>.traffic>h3{
+    padding-bottom: 10px;
+}
+#traffics>.traffic>p{
+    line-height: 23px;
+    padding: 3px;
+}
+
+/* 푸터 */
+#main_footer{
+    background: #fff;
+}
+#main_footer>#mms{
+    background: #d9ddde;
+    text-align: right;
+    padding: 10px;
+}
+#mms>a{
+    color: #59656d;
+}
+#mms .mms_icon{
+    width: 21px;
+    float: left;
+}
+#footer{
+    padding: 20px 0;
+}
